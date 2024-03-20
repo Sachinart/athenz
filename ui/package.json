@@ -62,7 +62,7 @@
         "cookie-parser": "1.4.6",
         "cookie-session": "2.0.0",
         "csurf": "1.11.0",
-        "cytoscape": "3.22.1",
+        "cytoscape": "3.28.1",
         "cytoscape-dagre": "2.4.0",
         "debug": "4.3.4",
         "denali-css": "2.5.1",
