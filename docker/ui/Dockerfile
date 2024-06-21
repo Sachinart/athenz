@@ -1,4 +1,4 @@
-FROM node:hydrogen-alpine AS builder
+FROM node:18-alpine3.20 AS builder
 
 RUN set -eux && apk update && apk add --no-cache --update ca-certificates libstdc++ libgcc tini make git bash
 
@@ -26,7 +26,7 @@ RUN rm -rf scripts \
     && rm -rf pom.xml \
     && rm -rf README.md
 
-FROM node:hydrogen-alpine
+FROM node:18-alpine3.20
 # date -u +'%Y-%m-%dT%H:%M:%SZ'
 ARG BUILD_DATE
 # git rev-parse --short HEAD
